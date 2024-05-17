@@ -4,7 +4,7 @@ $database = "hospitalinfo";
 $username = "conn";
 $password = "conn";
 
-//create Connection
+//create Connections
 
 $conn = new mysqli($servername,$username,$password,$database);
 //check connection
