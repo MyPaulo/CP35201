@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Drug</title>
+    </head>
+    <body>
+        
+    <h1 style=color:purple>Search Drugs</h1>
+    <form name="search" action="<?php $PHP_SELF?>" method="POST">
+    
+           <input type="text" placeholder="Keyword" name="keyword">
+           
+            <input type="submit" value="Search" name="searchButton">  <br/><br/>
+ 	
+            <input type="radio" name="choice" value="PID" checked>
+            <label for="Pharmacy PID" style=color:blue>Pharmacyt_PID</label>	
+            
+            <input type="radio" name="choice" value="Trade_Name">
+            <label for="Trade name" style=color:blue>Trade_Name</label>
+    
+            <input type="radio" name="choice" value="Pharmacy_Name">
+            <label for=" Name" style=color:blue>Pharmacy_Name</label>					<!--Sell[](Pharmacy ID,Trade Name,Price) -->
+        
+            <input type="radio" name="choice" value="Prices">
+            <label for="price" style=color:blue>Price</label>  
+
+          
+
+    </form>
+
+
+
+
+    </body>
+</html>

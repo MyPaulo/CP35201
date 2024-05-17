@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Menu</title>
+    </head>
+    <body>
+        
+    <h1 style=color:purple>Search Doctor(s) Pescription</h1>
+    <form name="search" action="<?php $PHP_SELF?>" method="POST">
+    
+           <input type="text" placeholder="Keyword" name="keyword">
+           
+            <input type="submit" value="Search" name="searchButton">  <br/><br/>
+ 	
+            <input type="radio" name="choice" value="pSIN" checked>
+            <label for="Patient SIN" style=color:blue>Patient_SIN or ID</label>	
+            
+            <input type="radio" name="choice" value="dSIN">
+            <label for="Doctor SIN" style=color:blue>Doctor_SIN or ID</label>
+    
+            <input type="radio" name="choice" value="Trade_Name">
+            <label for="Trade Name" style=color:blue>Trade_Name</label>
+        
+            <input type="radio" name="choice" value="Date">
+            <label for="Date" style=color:blue>Date</label>  
+
+            <input type="radio" name="choice" value="Quantity">
+            <label for="Quantity" style=color:blue>Quantity</label> 
+
+          
+
+    </form>
+
+
+
+
+    </body>
+</html>

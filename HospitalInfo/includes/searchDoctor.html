@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Menu</title>
+    </head>
+    <body>
+        
+    <h1 style=color:purple>Search Doctor(s)</h1>				
+    <form name="search" action="<?php $PHP_SELF?>" method="POST">
+    
+           <input type="text" placeholder="Keyword" name="keyword">
+            
+            <input type="submit" value="Search" name="searchDoctor">  <br/><br/>
+ 	
+            <input type="radio" name="choice" value="dSIN" checked>
+            <label for="Doctor SIN" style=color:blue>Doctor_SIN</label>	
+            
+            <input type="radio" name="choice" value="name">
+            <label for="Doctor Name" style=color:blue>Name</label>
+    
+            <input type="radio" name="choice" value="Specialty">
+            <label for="Specialty" style=color:blue>Specialty</label>
+    
+
+          
+
+    </form>
+
+
+
+
+    </body>
+</html>
