@@ -25,13 +25,13 @@
 
 		if(isset($_POST["changePasswordButton"])) {
 			$oldpassword = md5($_POST['oldpassword']);
-			$newpassword = $_POST['newpassword'];
+			$newpassword = md5($_POST['newpassword']); // Calculate MD5 hash before bind_param
 
 			if($oldpassword != $password)
 				print("<p style=color:purple>Old password does not match</p>");
 			else {
 				$sql = $mysqli -> prepare("UPDATE $table SET password=? WHERE username=?");
-				$sql -> bind_param('ss', md5($newpassword), $username);
+				$sql -> bind_param('ss', $newpassword, $username); // Pass $newpassword variable
 				$sql -> execute();
 
 				if($sql -> errno)
